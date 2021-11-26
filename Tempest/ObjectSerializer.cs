@@ -34,6 +34,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Collections.Concurrent;
+using System.Runtime.Serialization.Formatters.Binary;
 
 #if !SAFE
 using System.Reflection.Emit;
@@ -357,7 +358,7 @@ namespace Tempest
 
 			byte[] data = reader.ReadBytes();
 			using (MemoryStream stream = new MemoryStream (data))
-				return new BinaryFormatter().Deserialize (stream, null);
+				return new BinaryFormatter().Deserialize (stream);
 		}
 		
 		private void SerializableSerializer (IValueWriter writer, object value)
