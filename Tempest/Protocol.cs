@@ -201,7 +201,7 @@ namespace Tempest
 		}
 
 		private int version;
-		internal byte id;
+		public byte id;
 
 		/// <remarks>WP7 doesn't have HashSet.</remarks>
 		private readonly Dictionary<int, bool> compatible;

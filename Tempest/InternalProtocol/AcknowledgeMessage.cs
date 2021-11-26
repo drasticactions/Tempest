@@ -26,7 +26,7 @@
 
 namespace Tempest.InternalProtocol
 {
-	internal class AcknowledgeMessage
+	public class AcknowledgeMessage
 		: TempestMessage
 	{
 		public AcknowledgeMessage()
