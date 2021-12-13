@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat", "Desktop\Sampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempest", "Tempest\Tempest.csproj", "{546F259D-CD47-49D6-8AA1-5D0059D8C390}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tempest.Tests", "Tests\Tempest.Tests.csproj", "{1244D7C5-23B0-4227-B50C-90E36EDC7088}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,14 @@ Global
 		{546F259D-CD47-49D6-8AA1-5D0059D8C390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{546F259D-CD47-49D6-8AA1-5D0059D8C390}.Release|Any CPU.Build.0 = Release|Any CPU
 		{546F259D-CD47-49D6-8AA1-5D0059D8C390}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1244D7C5-23B0-4227-B50C-90E36EDC7088}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
