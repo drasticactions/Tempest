@@ -357,10 +357,16 @@ namespace Tempest
 				return null;
 
 			byte[] data = reader.ReadBytes();
+			var binaryFormatter = new BinaryFormatter ();
+#if NETFRAMEWORK
 			using (MemoryStream stream = new MemoryStream (data))
 				return new BinaryFormatter().Deserialize (stream, null);
+#else
+			using (MemoryStream stream = new MemoryStream(data))
+				return new BinaryFormatter().Deserialize(stream);
+#endif
 		}
-		
+
 		private void SerializableSerializer (IValueWriter writer, object value)
 		{
 			if (this.type.IsClass)
@@ -372,9 +378,9 @@ namespace Tempest
 				writer.WriteBytes (stream.ToArray());
 			}
 		}
-		#endif
+#endif
 
-		private void Serialize (ISerializationContext context, IValueWriter writer, object value, bool skipHeader)
+			private void Serialize (ISerializationContext context, IValueWriter writer, object value, bool skipHeader)
 		{
 			this.serializer (context, writer, value, skipHeader);
 		}
