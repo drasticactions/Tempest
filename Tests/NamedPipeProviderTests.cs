@@ -8,7 +8,8 @@ using NUnit.Framework;
 namespace Tempest.Tests
 {
 	[TestFixture]
-	public class NamedPipeProverTests
+    [Ignore("Not Implemented")]
+	public class NamedPipeProviderTests
 		: ConnectionProviderTests
 	{
 
