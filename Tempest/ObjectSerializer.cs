@@ -380,7 +380,7 @@ namespace Tempest
 		}
 #endif
 
-			private void Serialize (ISerializationContext context, IValueWriter writer, object value, bool skipHeader)
+		private void Serialize (ISerializationContext context, IValueWriter writer, object value, bool skipHeader)
 		{
 			this.serializer (context, writer, value, skipHeader);
 		}
